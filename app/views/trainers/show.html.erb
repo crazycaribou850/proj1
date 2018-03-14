@@ -6,7 +6,9 @@
     <% if t.ndex %>
       <%= image_tag("pokemon/#{t.ndex}.png", alt: "pokemon") %>
     <% end %>
+    <%= button_to "Damage!", trainer_path(id: current_trainer), :class => "button medium", :method => :patch, params: { poke: t } %>
     <p>Pokemon name: <%= t.name %> <p>
     <p>Pokemon level: <%= t.level %> <p>
+    <p>Pokemon health: <%= t.health %> <p>
     <br />
 <% end %>
