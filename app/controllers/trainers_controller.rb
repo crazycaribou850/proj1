@@ -11,7 +11,7 @@ class TrainersController < ApplicationController
 
   def update
     @pokemon = Pokemon.find(params[:poke])
-    @pokemon.damage(10)
+    @pokemon.damage(50)
     @pokemon.save
     if @pokemon.health <= 0
       Pokemon.delete(params[:poke])

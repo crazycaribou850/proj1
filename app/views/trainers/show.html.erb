@@ -2,6 +2,9 @@
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 <p>Pokemon: <p>
+<% if Integer(params[:id]) == Integer(current_trainer.id) %>
+  <%= button_to "Create new Pokemon", pokemons_path, :class => "button medium", :method => :get %>
+<% end %>
 <% @trainer.pokemon.each do |t| %>
     <% if t.ndex %>
       <%= image_tag("pokemon/#{t.ndex}.png", alt: "pokemon") %>
