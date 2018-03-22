@@ -14,7 +14,9 @@ Pokemonny the Pokemon. Um.
 I passed the trainer_path into the redirect_to of the button. Since the request was a PATCH request, it was directed to the update method of the trainer class, which needed a trainer :id parameter.
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
+This line creates the parameter flash[:error]. In application.html.erb, the bottom of the file shows that it renders 'layouts/messages' for all pages. This means that if there are any parameters in flash, they will be rendered automatically.
 
 # Give us feedback on the project and decal below!
+The project was really fun! Maybe it would have been better to give us less starter code but walk us through on how to implement things like error messages so that we can set them up ourselves and understand exactly what is going on. On an interface with so much 'magic' going on, it might become confusing which functionalities are implicitly available and which require work. (especially for novice programmers like myself). Definitely understand that that might entail a lot more work on both ends, however!
 
 # Extra credit: Link your Heroku deployed app
