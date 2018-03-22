@@ -20,3 +20,4 @@ This line creates the parameter flash[:error]. In application.html.erb, the bott
 The project was really fun! Maybe it would have been better to give us less starter code but walk us through on how to implement things like error messages so that we can set them up ourselves and understand exactly what is going on. On an interface with so much 'magic' going on, it might become confusing which functionalities are implicitly available and which require work. (especially for novice programmers like myself). Definitely understand that that might entail a lot more work on both ends, however!
 
 # Extra credit: Link your Heroku deployed app
+https://github.com/limmingjun/proj1
